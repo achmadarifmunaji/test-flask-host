@@ -3,7 +3,7 @@ from prediction import Keyword_Spotting_Service
 
 app = Flask(__name__)
 
-@app.route("/catch", methods=["POST"])
+@app.route("/catch", methods=["POST"]) 
 def catch():    
     if request.method == "POST":
         data = {"answer": "This from jsonify"}
